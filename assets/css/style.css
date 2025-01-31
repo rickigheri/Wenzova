@@ -1414,3 +1414,57 @@ body {
   .offer .container { gap: 120px; }
 
 }
+
+
+
+/*-----------------------------------*\
+  #ABOUT SECTION
+\*-----------------------------------*/
+
+.about-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.about-section .container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.about-section p,
+.about-section ul {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-section ul li {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.about-section ul li::before {
+  content: "•";
+  color: #ff6347;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
