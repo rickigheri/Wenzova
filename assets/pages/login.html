@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wenzova - Connexion / Enregisrter</title>
+
+    <!-- 
+    - favicon
+    -->
+    <link rel="shortcut icon" href="../../w.jpg" type="image/svg+xml">
+
+    <!-- 
+        - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+  
+</head>
+  <body>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form action="index.html" autocomplete="off" class="sign-in-form">
+              <div class="logo">
+                <a href="../../index.html"><img src="../images/logo.png" alt="logo" /></a>
+                <!-- <h4>easyclass</h4> -->
+              </div>
+
+              <div class="heading">
+                <h2>Connexion</h2>
+                <h6>Votre première fois ?</h6>
+                <a href="#" class="toggle">Créer votre compte</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>E-mail</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Mot de passe</label>
+                </div>
+
+                <input type="submit" value="Connexion" class="sign-btn" />
+
+                <p class="text">
+                  Vous avez oublié votre mot de passe ou vos identifiants ?
+                  <a href="#">Obtenez de l'aide</a> pour vous connecter.
+                </p>
+              </div>
+            </form>
+
+            <form action="login.html" autocomplete="off" class="sign-up-form">
+              <div class="logo">
+                <a href="../../index.html"><img src="../images/logo.png" alt="logo" /></a>
+                <!-- <h4>easyclass</h4> -->
+              </div>
+
+              <div class="heading">
+                <h2>S'enregistrer</h2>
+                <h6>Vous avez déjà un compte</h6>
+                <a href="#" class="toggle">Connexion</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Nom</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>E-mail</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Mot de passe</label>
+                </div>
+
+                <input type="submit" value="Enregistrer" class="sign-btn" />
+
+                <p class="text">
+                  En s'inscrivant, vous acceptez nos
+                  <a href="#">Conditions d'utilisation</a> & 
+                  <a href="#">Politiques de confidentialité.</a>
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="../images/log1.jpg" class="image img-1 show" alt="" />
+              <img src="../images/log2.jpg" class="image img-2" alt="" />
+              <img src="../images/log3.png" class="image img-3" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>💰 Gagnez du cashback.</h2>
+                  <h2>🔑 Accédez à vos offres.</h2>
+                  <h2>🛍️ Achetez et économisez</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript file -->
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
