@@ -95,3 +95,26 @@ const scrollReveal = function () {
 scrollReveal();
 
 addEventOnElem(window, "scroll", scrollReveal);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cartCount = document.getElementById("cart-count");
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const updateCartCount = () => {
+    cartCount.textContent = cart.length;
+  };
+
+  document.querySelectorAll(".add-to-cart").forEach(button => {
+    button.addEventListener("click", (e) => {
+      const title = button.dataset.title;
+      const price = parseFloat(button.dataset.price);
+      const image = button.dataset.image;
+
+      cart.push({ title, price, image });
+      localStorage.setItem("cart", JSON.stringify(cart));
+      updateCartCount();
+    });
+  });
+
+  updateCartCount();
+});
